@@ -1,0 +1,49 @@
+/* .header-nav{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.header-nav li{
+    list-style-type: none;
+    border: 1px solid grey;
+    padding: auto;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3, p{
+    text-align: center;
+}
+
+@media (width <= 500px){
+    nav{
+      background-color: rgb(126, 126, 134);  
+    }
+
+    .header-nav{
+       flex-direction: column;
+       gap: 0;
+    }
+
+    .header-nav li{
+       text-align: center;
+       font-size: 30px;
+    }  
+    
+    .link{
+        display: none;
+    }
+} */
+
+.view{
+    color:blue;
+}
+
+.link{
+    color:blue;
+}

@@ -1,0 +1,73 @@
+@import url(reset.css);
+
+.site {
+    max-width: 600px;
+    margin: 3em auto;
+}
+
+/* body {
+    border: 2px solid black;
+} */
+
+
+section {
+    border: 1px dashed black;
+    /* padding-left: 10px;
+padding-right: 10px; */
+    /* padding: 0px 30px 30px 30px; */
+
+    padding: 25px;
+}
+
+/* .margin, .border, padding{
+    position: absolute;
+} */
+
+.margin {
+    /* height: 50px; */
+    background: lightsalmon;
+    position: relative;
+}
+
+.border {
+    background: lightgoldenrodyellow;
+    position: relative;
+}
+
+.padding {
+    background: lightgreen;
+    position: relative;
+}
+
+.content {
+    background: lightblue;
+    text-align: center;
+    /* padding-top: 15px; */
+    height: 50px;
+    position: relative;
+}
+
+#margin {
+    position: absolute;
+    top: 8px;
+    left: 35px;
+}
+
+#border{
+    position: absolute;
+    left: 35px;
+    top: 8px;
+}
+
+#padding{
+    position: absolute;
+    left: 35px;
+    top: 8px;
+}
+
+span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

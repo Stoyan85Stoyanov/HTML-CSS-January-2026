@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    border: 1px solid green;
+    /* padding: 10px; */
+    padding-bottom: 0;
+}
+
+section{
+    border: 1px solid black;
+    padding: 8px 40px;
+    margin: 15px;
+}
+
+article{
+    border: 1px solid blue;
+    padding: 15px;
+    margin: 15px;
+}
+/* последният елемент марджина и падинга да ги няма  */
+section:last-of-type{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+ /* само на article който се намира в последният section */
+section:last-of-type article{
+    margin-bottom: 0;
+}

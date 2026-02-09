@@ -1,0 +1,42 @@
+html {
+    font: 14px/1.5 Lato, sans-serif;
+}
+
+body, button, textarea, input {
+    font: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 2em;
+}
+
+.button{
+   color: #333; 
+   font-size: 18px;
+   padding: 10px 8px;
+   text-align: center;
+   background: #ddd;
+   border-radius: 2px;
+   text-decoration: none;
+   border: 1px solid #ddd;
+   cursor: pointer;
+  
+}
+
+.button:hover{
+    color: white;
+    background-color: black;
+}
+
+.primary{
+    background-color: orange;
+}
+
+.secondary{
+    background-color: lightgoldenrodyellow;
+}
+
+.outline{
+    background-color: white;
+}

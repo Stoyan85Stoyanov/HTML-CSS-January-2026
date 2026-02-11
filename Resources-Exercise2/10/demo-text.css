@@ -1,0 +1,52 @@
+  * {
+      padding: 0;
+      margin: 0;
+  }
+
+  *,
+  *::before,
+  ::after {
+      box-sizing: inherit;
+  }
+
+  html {
+      font: 16px/1.5 Verdana, sans-serif;
+  }
+
+  body,
+  input {
+      font: inherit;
+  }
+
+  html {
+      box-sizing: border-box;
+  }
+
+  body {
+      margin: 0;
+      background-color: #369;
+      color: white;
+      padding: 2em;
+      min-height: 100dvh;
+  }
+
+
+  p, ul, ol {
+    padding-bottom: 1.5em;
+  }
+
+  ul, ol {
+     padding-left: 1.5em;
+     outline: 1px solid red;
+  }
+
+  /* обхваща всички случаи за премахване на padding */
+  ul, ul, ol, ol, ol, ul, ul, ol {
+    /* padding-bottom: 0;  */
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+  }
+
+  /* em - relational unit - relative to the CURRENT ELEMENT font size */
+  /* rem - relational unit - relative to the ROOT ELEMENT font size */
+  /* when root size is set to 16px, 1rem = 16px */

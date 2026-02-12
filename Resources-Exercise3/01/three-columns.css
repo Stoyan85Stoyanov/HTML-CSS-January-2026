@@ -1,0 +1,50 @@
+.container {
+    max-width: 130ch;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+}
+
+/* относно тънката линия за да е в средата */
+hr {
+    max-width: 10ch;
+    margin: 2em auto;
+    border: 1px solid #ccc;
+}
+
+/* за да бъде текста отгоре и отдолу в средата */
+header,
+footer {
+    text-align: center;
+}
+
+header p,
+footer p {
+    /* #000 - black;  #FFF- white*/
+    color: #888;
+}
+
+footer p {
+    padding: 0 130px;
+}
+
+header h1 {
+    /* използва се padding-bottom: 0.5rem за да не се използва padding на h1 */
+    padding-bottom: 0.5rem;
+}
+
+header p {
+    font-style: italic;
+    max-width: 50ch;
+    margin: 0 auto;
+}
+
+
+/* за да се подредят едно до друго хоризонтално */
+main {
+    display: flex;
+    gap: 2em;
+    padding: 1em 2em;
+}

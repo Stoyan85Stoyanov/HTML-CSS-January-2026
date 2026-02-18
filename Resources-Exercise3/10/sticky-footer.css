@@ -1,0 +1,51 @@
+body {
+    padding: 2em;
+    display: flex;
+    min-height: 100vh;
+    border: 2px solid green;
+}
+
+.site {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.site > * {
+    border: 2px solid blue;
+    padding: 2em;
+}
+
+.site > * + * {
+    margin-top: 2em;
+}
+
+.site-content {
+    flex: 1 1 auto;
+}
+
+
+/* * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    border: 2px solid green;
+    min-height: 100dvh;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+body > * {
+    border: 2px solid blue; 
+    border-radius: 0.3em;
+    padding: 1em;
+}
+
+заема цялото свободно пространство (разпъва се по вертикала)
+main {
+    flex-grow: 1;
+} */

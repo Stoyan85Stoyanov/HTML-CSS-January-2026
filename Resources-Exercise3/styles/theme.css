@@ -1,0 +1,7 @@
+body {
+    /* padding: 2vw; адаптира се
+    за по-малки устройства padding е по-малко и обратно */
+    padding: 2vw; 
+    background: #eee;
+    min-height: 100dvh;
+}

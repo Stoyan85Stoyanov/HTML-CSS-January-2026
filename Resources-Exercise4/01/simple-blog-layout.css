@@ -1,0 +1,54 @@
+/* бял фон на контейнера от край до край */
+.site {
+    background: #fff;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+    border-radius: 0.3em;
+    padding: 2em;
+    /* ограничаваме блоковият елемент */
+    max-width: 50em;
+    /* контейнера се центрира в средата на браузера */
+    margin: 0 auto;
+}
+
+/* за да станат в табличен вид!!! */
+.site-header,
+.content-main,
+.content-aside,
+.site-footer {
+    border: 2px solid #ccc;
+    border-radius: 0.3em;
+    padding: 1.5em 2em;
+}
+
+.site-content {
+    /* да има разстояние между отделните редове - вертикално*/
+    padding: 1em 0;
+    /* нареждат се едно до друго хоризонтално */
+    display: flex;
+    /* да има разстояние между отделните редове - хоризонтално*/
+    gap: 1em;
+}
+
+/* размери на отделните кутийки разположени 
+хоризонтално FlexBox*/
+.content-main {
+    /* заема свободното хоризонтално пространство */
+    flex: 1 0 auto;
+}
+
+.content-aside {
+    /* нараства хоризонтално */
+    flex: 0 0 25ch;
+}
+
+@media (max-width: 800px) {
+    .site-content {
+        /* нареждат се едно под друго */
+        flex-direction: column;
+    }
+
+    .content-aside {
+    /* всички са с еднаква широчина */
+    flex-basis: auto;
+}
+} 

@@ -1,0 +1,119 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 Lato, sans-serif;
+}
+
+body {
+    padding: 2em;
+    background: #eee;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login {
+    flex: 0 0 35em;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 0.3em;
+    padding: 2em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+}
+
+.login fieldset {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 0.3em;
+
+}
+
+/* тънката хоризонтална линия под Login */
+legend {
+    display: block;
+    width: 30%;
+    font-size: 1.8em;
+    font-weight: bold;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1em;
+}
+
+.login label {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.login input {
+    display: block;
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 0.3em;
+    padding: 1em 1.5em;
+}
+
+.login input[type="submit"] {
+    border: none;
+    background: darkorange;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 1em;
+}
+
+.login .field {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+    /* margin: 0.5em; */
+    position: relative;
+}
+
+/* премества ги отгоре върху кутийката и на двете */
+.login .field label {
+    order: -1;
+}
+
+/* къде са стоят иконките в дясно които трябва да бъдат */
+.login .field label::before {
+    display: block;
+    /* за да може да се мести по избор */
+    position: absolute;
+    top: 12px;
+    right: 3px;
+    font-family: "Font Awesome 6 Free";
+}
+
+.login .field input[type="email"] ~ label::before {
+   content: '\f0e0';
+   top: 14px;
+}
+
+.login .field input[type="password"] ~ label::before {
+   content: '\f084';
+}
+
+/* звездата от дясно */
+.login input:required ~ label::after {
+    content: '*';
+    color: red;
+    padding: 0.3em;
+    display: inline-block;
+}
+
+.helper-text {
+    font-style: italic;
+    opacity: 0.6;
+}

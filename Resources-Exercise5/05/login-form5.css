@@ -1,0 +1,107 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 Lato, sans-serif;
+}
+
+body {
+    padding: 2em;
+    background: #eee;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin-bottom: 2em;
+}
+
+
+.login {
+    flex: 0 0 35em;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 0.3em;
+    padding: 2em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+}
+
+.login fieldset {
+    display: block;
+    width: 100%;
+    padding: 2em;
+    margin-bottom: 1.5em;
+    border-radius: 0.3em;
+    border: 2px solid #ccc;
+    padding-bottom: 0;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 1em;
+}
+
+.login label {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.login input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ccc;
+}
+
+.login input:focus, textarea:focus {
+    outline: none;
+}
+
+.login input[type="submit"] {
+    border: none;
+    background: #eee;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 1em;
+    padding: 1em 1.5em;
+}
+
+/* увеличава височината на полето за попълване */
+.login input[type="date"] {
+    padding: 1em 0;
+}
+
+
+.login .field {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* премества ги отгоре върху кутийката и на двете */
+.login .field label {
+    order: -1;
+}
+
+
+.helper-text {
+    font-style: italic;
+    opacity: 0.4;
+    font-weight: 600;
+}
+
+
+.helper-text:first-of-type {
+    margin-bottom: 2em;
+}

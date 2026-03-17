@@ -1,0 +1,63 @@
+@media (width <=600px) {
+
+    /* за тестване дали работи и се оцветява width <= 600px */
+    /* body {
+        background: red;
+    } */
+
+    nav ul {
+        display: none;
+    }
+
+    .checkbtn {
+        display: block;
+        /* за размяна на местата от ляво в дясно (3 те хоризонтални черти) */
+        order: 1;
+    }
+
+    .site-header>i,
+    h1 {
+
+        text-align: initial;
+        position: static;
+        bottom: initial;
+    }
+
+    section.site-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    section.about {
+        display: flex;
+        gap: 1em;
+    }
+
+    section.about .about-header,
+    section.about .about-text {
+        flex: 1 1 50%;
+    }
+
+    section.about .about-header {
+        text-align: left;
+        width: auto;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section.about .about-text {
+        width: auto;
+        display: block;
+        margin: 0;
+    }
+
+    .gallery {
+        text-align: center;
+    }
+}

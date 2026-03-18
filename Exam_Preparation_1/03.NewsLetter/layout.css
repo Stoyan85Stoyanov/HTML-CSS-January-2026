@@ -1,0 +1,12 @@
+body {
+    background: #C1bbbb;
+}
+
+/* .section {
+
+} */
+
+.section .inner {
+    max-width: 1300px;
+    margin: 0 auto;
+}

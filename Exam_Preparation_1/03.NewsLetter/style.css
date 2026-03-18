@@ -1,0 +1,314 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+
+.section.site-header {
+    margin-bottom: 2em;
+}
+
+.section.site-header .inner {
+    display: flex;
+    padding: 4em 0 2em;
+    align-items: center;
+}
+
+.section.site-header .site-branding {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.section.site-header .site-title {
+    background: #57A390;
+    line-height: 1;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    color: #fff;
+    font-size: 3em;
+    font-family: 'Oleo Script', sans-serif;
+    font-weight: normal;
+}
+
+.section.site-header .site-desc {
+    font-weight: bold;
+}
+
+.section.site-header nav {
+    margin-left: auto;
+}
+
+.section.site-header nav ul {
+    /* list-style: none; */
+    display: flex;
+    gap: 2em;
+    padding-bottom: 0;
+}
+
+.section.site-header nav a,
+.section.site-header nav li {
+    display: block;
+}
+
+.section.site-header nav a {
+    color: #696969;
+    padding: 0.5em 1em;
+    border-radius: 0.3em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section.site-header nav li.active a {
+    background: #444;
+    color: #fff;
+}
+
+.section.banner {
+    margin-bottom: 4em;
+}
+
+.section.banner .inner {
+    background: #fff;
+    border-radius: 0.5em;
+    padding: 4em;
+    display: flex;
+    gap: 4em;
+}
+
+.section.banner .text {
+    flex: 0 1 60%;
+}
+
+.section.banner .text h2 {
+    font-size: 5em;
+    line-height: 1;
+}
+
+.section.banner .text p {
+    font-size: 4em;
+    line-height: 1;
+    font-weight: 100;
+    padding: 0;
+}
+
+.section.banner .buttons {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.section.banner .buttons .button {
+    display: flex;
+    justify-content: space-between;
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1;
+    background: #f2f2f2;
+    border-radius: 0.4rem;
+    text-decoration: none;
+    color: #444;
+    padding: 2rem 2.5rem;
+}
+
+.section.banner .buttons .button.primary {
+    background: #0090C5;
+    color: #fff
+}
+
+.section.cards {
+    margin-bottom: 2em;
+}
+
+.section.cards .inner {
+    display: flex;
+    gap: 2em;
+}
+
+.section.cards .card {
+    overflow: hidden;
+    border-radius: 0.5em;
+    background: #fff;
+}
+
+.section.cards p {
+    font-weight: 100;
+    line-height: 1.7;
+    /* за изветляване на текста */
+    opacity: 0.7;
+}
+
+.main p {
+    opacity: 0.5;
+}
+
+.section.cards .card-header {
+    padding: 3em 2.5em 0;
+}
+
+.section.cards .card-header h3 {
+    font-size: 1.4em;
+    line-height: 1;
+}
+
+.section.cards .card-content {
+    padding: 0em 2.5em;
+    padding-bottom: 2em;
+}
+
+.section.call-to-action {
+    background: #fff;
+    margin-bottom: 4em;
+    padding-bottom: 2em;
+
+}
+
+.section.call-to-action .inner {
+    display: flex;
+    gap: 3em;
+}
+
+.section.call-to-action .aside {
+    flex: 0 0 30%;
+}
+
+.section.call-to-action h3 {
+    font-size: 2em;
+}
+
+.section.call-to-action h4 {
+    font-size: 1.5em;
+}
+
+.section.call-to-action .main .text {
+    padding-top: 1em;
+    line-height: 1.8;
+}
+
+.section.call-to-action .main .text-one {
+    padding-top: 1em;
+    /* за разстояние между редовете на текста*/
+    line-height: 1.8;
+    margin-bottom: 3em;
+
+}
+
+
+.section.call-to-action .aside ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 1em 0;
+}
+
+.section.call-to-action .aside li {
+    flex: 0 1 40%;
+    display: block;
+    overflow: hidden;
+    border-radius: 0.5em;
+}
+
+/* .section.site-footer {
+
+} */
+
+.section.site-footer .columns {
+    display: flex;
+    gap: 2em;
+}
+
+.section.site-footer .columns .column {
+    flex: 1 1 25%;
+}
+
+.section.site-footer .column a {
+    color: #696969;
+}
+
+.section.site-footer .inner>p:last-child {
+    text-align: center;
+    font-weight: bold;
+}
+
+.socials {
+    display: flex;
+}
+
+.socials li {
+    display: block;
+}
+
+.socials a {
+    display: block;
+    padding: 1em;
+}
+
+.button-container {
+    /* подрежда бутоните хоризонтално */
+    display: flex;
+    /* разстояние между бутоните */
+    gap: 10px;
+}
+
+.button.secondary {
+    padding: 10px;
+}
+
+/* a.button.secondary {
+  flex-direction: row !important;
+} */
+
+.button {
+    font-size: 14px;
+    border: none;
+    margin-top: 2em;
+    margin-right: 10px;
+    padding: 10px 18px;
+    color: #fff;
+    background: #1da1d2;
+    border-radius: 4px;
+    cursor: pointer;
+
+    text-decoration: none;
+}
+
+
+.section.site-footer ul,
+.section.site-footer p {
+    padding: 0;
+}
+
+.section.site-footer .last {
+    padding-bottom: 3em;
+}
+
+.section.site-footer .last_ {
+    padding-bottom: 6rem;
+}
+
+
+
+.socials {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.socials li {
+  margin: 0;
+}
+
+.socials a {
+  padding: 0.2em;
+}
+
+/* иконите стават по големи */
+.socials i {
+  font-size: 28px;
+}
+
+
+
+

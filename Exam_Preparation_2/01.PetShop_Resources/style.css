@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f2f2f2;
+}
+
+
+
+.about-section {
+    max-width: 1600px;
+    margin: 60px auto;
+    background: #ffffff;
+    box-shadow: 0 0 20px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+.container {
+    display: flex;
+    gap: 1em;
+    padding: 20px;
+}
+
+
+.image {
+    flex: 0.5;
+    margin-right: 1em;
+    margin-left: 2em;
+}
+
+
+.image img {
+    width: 100%;
+    display: block;
+    /* border-radius: 0.3em; */
+}
+
+
+.content {
+    flex: 1;
+    background: #f3f3f3;
+    position: relative;
+    max-width: 900px;
+    margin-right: 20px;
+}
+
+
+.content::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 4px;
+    height: 187px;
+    background: #7CB342;
+}
+
+
+.subtitle-intro {
+    font-size: 8px;
+    font-weight: 20em;
+    color: #7CB342;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.content h1 {
+    margin: 0 0 0 30px;
+    font-size: 36px;
+    font-weight: 800px;
+    line-height: 1em;
+    color: #000;
+    text-transform: uppercase;
+    padding-left: 0;
+    padding-bottom: 1.2em;
+}
+
+.break {
+    display: block;
+}
+
+
+.intro {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.8;
+    background: #fff;
+    padding: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.info {
+    display: flex;
+    align-items: center;
+    /* background: #ededed; */
+    padding: 15px;
+    /* gap: 40px; */
+    /* margin-bottom: 20px; */
+}
+
+
+.mission {
+    background: #ededed;
+    /* background: #7CB342; */
+    /* color: #7CB342; */
+    font-size: 13px;
+    max-width: 50em;
+    padding: 10px 22px;
+    /* border-radius: 2px; */
+    text-transform: uppercase;
+    width: 50%;
+    /* да се центрира текста хоризонтално*/
+    text-align: center;
+}
+
+
+.details {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.9;
+    padding: 0 0 13px 13px;
+}
+
+a {
+    /* background: #ededed; */
+    text-decoration: none;
+}
+
+/* a:hover {
+    background: #90B82F;
+}
+
+a > span {
+    color: #7CB342; 
+}
+
+a > span:hover {
+    color: #FFF;
+} */
+
+.mission span {
+    color: #7CB342;
+}
+
+.mission:hover {
+    background: #90B82F;
+}
+
+.mission:hover span {
+    color: #fff;
+}

@@ -1,0 +1,494 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navigation {
+    background: #f8a5c2;
+}
+
+.hero-content {
+    overflow: hidden;
+    margin: auto;
+    background-image: url(images/carousel-1.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: max(30vh, 750px);
+    /* height: 600px; */
+    position: relative;
+}
+
+/* h1 - става по-голям  */
+.hero-content h1 {
+    font-size: 56px;
+    line-height: 1.1;
+}
+
+/* да стане на два реда */
+.hero-content h1 span {
+    display: block;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.top-bar {
+    background: #f8a5c2;
+    font-size: 14px;
+}
+
+.top-flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.container-top {
+    display: flex;
+    /* подрежда едно под друго */
+    flex-direction: column;
+    /* центрира хоризонтално */
+    justify-content: center;
+    /* центрира вертикално */
+    align-items: center;
+    /* разстояние между двата div-а */
+    gap: 8px;
+    padding: 8px 0;
+}
+
+.top-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-links a {
+    position: relative;
+    padding: 0 12px;
+    color: #fff;
+}
+
+/* вертикалната линия */
+.top-links a:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 14px;
+    background: #fff;
+}
+
+
+.social a {
+    margin-left: 20px;
+    color: #fff;
+}
+
+
+/* padding: 20px 0; */
+/* .header {
+    background: #fff;
+    
+    padding: 8px 20px;
+    border-radius: 20px;
+    max-width: 1000px;
+    max-height: 60px;
+    justify-content: space-between;
+} */
+
+/* .header {
+    background: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2);
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: -50px;
+    z-index: 1;
+    position: absolute;
+} */
+
+
+
+
+.header {
+    position: absolute;
+    z-index: 9;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* z-index: 10; */
+}
+
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+}
+
+
+.header .container.nav {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.nav-left,
+.nav-right {
+    display: flex;
+    gap: 25px;
+}
+
+
+.nav-left {
+    margin-left: auto;
+}
+
+.nav-right {
+    margin-right: auto;
+}
+
+
+.header nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 8px;
+    transition: color 0.2s ease;
+}
+
+.hero,
+.carousel,
+#header-carousel {
+    margin-top: -70px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav nav a {
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+.logo {
+    font-size: 45px;
+    font-weight: 700;
+    color: #5bc0eb;
+}
+
+.logo span {
+    color: #f78fb3;
+}
+
+
+.logo_ {
+    font-size: 32px;
+    font-weight: 700;
+    color: #5bc0eb;
+    padding-bottom: 0.3em;
+}
+
+.logo_ span {
+    color: #f78fb3;
+}
+
+
+
+.hero {
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content span {
+    margin-top: 10px;
+}
+
+.hero h4 {
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+/* двата бутона */
+.btn {
+    padding: 8px 22px;
+    border-radius: 30px;
+    background: #f78fb3;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* бутона в средата */
+.hero-content .btn {
+    margin: 28px;
+    padding: 8px 22px;
+    font-size: 14px;
+}
+
+
+.btn.blue {
+    background: #5bc0eb;
+}
+
+.btn.pink {
+    background: #f78fb3;
+}
+
+
+.about {
+    background: #dff3fb;
+    /*  */
+    padding: 80px 0;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.about h2::before {
+    content: "";
+    width: 80px;
+    height: 3px;
+    background: #f195b2;
+    display: block;
+    margin: 0 auto 8px;
+}
+
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+/* за намаляне мащаба и на двата текста */
+.about-text,
+.features {
+    font-size: 14px;
+}
+
+.about-text {
+    margin-left: 0;
+}
+
+.about-text h2 {
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+}
+
+.about-text h3,
+.features h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.about-text p,
+.features p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.about-text .small {
+    font-size: 14px;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    object-fit: cover;
+}
+
+.about-image {
+    display: flex;
+    justify-content: center;
+}
+
+.features h3 {
+    margin-top: 9px;
+    margin-bottom: 10px;
+}
+
+.features ul {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.features li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.features li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #5bc0eb;
+}
+
+
+.footer {
+    background: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer-social a {
+    margin: 0 8px;
+    font-size: 18px;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #5bc0eb;
+    color: #5bc0eb;
+    text-decoration: none;
+    margin: 0 6px;
+}
+
+.footer-social .link i {
+    font-size: 12px;
+}
+
+.footer-social .link:hover {
+    background-color: #5bc0eb;
+    color: #fff;
+}
+
+
+.footer-info {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 20px 0;
+    position: relative;
+}
+
+/* тънка вертикална линия */
+.footer-info::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    background: black;
+    top: 0.2px;
+    bottom: 0.2px;
+}
+
+.footer-info h4 {
+    margin-bottom: 10px;
+}
+
+.info-left {
+    text-align: right;
+    padding-left: 3em;
+    padding-right: 10px;
+}
+
+.info-right {
+    text-align: left;
+    padding-right: 4em;
+    padding-left: 10px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #777;
+}
+
+.domain {
+    color: #f78fb3;
+}

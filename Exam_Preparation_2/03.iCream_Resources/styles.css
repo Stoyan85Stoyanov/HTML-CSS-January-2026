@@ -1,0 +1,432 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+
+.container {
+    /* width: 90%; */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container.nav {
+    max-width: 600px;
+    /* променя се широчината */
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+
+.navigation {
+    background: #f8a5c2;
+    position: relative;
+    /* фиксирана височина на розовата лента */
+    height: 95px;
+}
+
+.container-top {
+    display: flex;
+    /* подрежда едно под друго */
+    flex-direction: column;
+    /* центрира вертикално */
+    justify-content: center;
+    /* центрира хоризонтално */
+    align-items: center;
+    /* разстояние между двата div-а */
+    gap: 8px;
+    padding: 8px 0;
+    text-align: center;
+}
+
+.top-links a {
+    color: #fff;
+    padding: 0 12px;
+    position: relative;
+    font-size: 14px;
+}
+
+.top-links a:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 14px;
+    background: #fff;
+}
+
+.social a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.socials a:not(:last-child) {
+    margin-right: 18px;
+    padding-right: 6px;
+}
+
+
+.header {
+    position: absolute;
+    /* точно под розовата лента (премества надолу)*/
+    top: 65px;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+.header .container.nav {
+    max-width: 1100px;
+    height: 55px;
+    background: #fff;
+    border-radius: 100px;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-left {
+    padding-left: 5em;
+}
+
+.nav-right {
+    padding-right: 5em;
+}
+
+
+.header nav a {
+    font-size: 15px;
+    font-weight: 600;
+    color: #222;
+}
+
+
+
+.logo {
+    font-size: 48px;
+    font-weight: 700;
+    color: #5bc0eb;
+    text-align: center;
+}
+
+.logo span {
+    color: #f78fb3;
+}
+
+
+
+.hero-content {
+    min-height: 750px;
+    background-image: url(images/carousel-1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+    color: #fff;
+}
+
+/* h1 - става по-голям  */
+.hero-content span {
+    font-size: 100px;
+    ;
+    line-height: 1.1;
+}
+
+.hero-content::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.hero-content>* {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h5 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.hero-content h1 {
+    font-size: 64px;
+    line-height: 1.15;
+    margin-bottom: 28px;
+}
+
+.hero-content h1 span {
+    display: block;
+}
+
+
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    background: #f78fb3;
+    color: #fff;
+}
+
+.btn.blue {
+    background: #5bc0eb;
+}
+
+.btn.pink {
+    background: #f78fb3;
+}
+
+
+
+
+
+.about {
+    background: #dff3fb;
+    padding: 60px 0;
+}
+
+.container.about-grid {
+    display: flex;
+    align-items: center;
+    /* за да могат двата текста от двете страни
+     на снимката да се преместват спрямо нея */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.about h2::before {
+    content: "";
+    width: 80px;
+    height: 3px;
+    background: #f78fb3;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+/* за намаляне мащаба и на двата текста */
+.about-text,
+.features {
+    font-size: 14px;
+}
+
+/* движение на дясно хоризонтално */
+.about-text {
+    width: 300px;
+    flex-shrink: 0;
+    margin-left: 140px;
+}
+
+/* движение на ляво хоризонтално */
+.features {
+    width: 300px;
+    flex-shrink: 0;
+    margin-right: 140px;
+}
+
+/* болдване на текст */
+.text-one {
+    font-weight: 700;
+}
+
+.text-ul {
+    font-weight: 700;
+}
+
+.about-text h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.features h3 {
+    margin-top: 4px;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.about-text p,
+.features p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.about-image {
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    max-width: 300px;
+    width: 100%;
+    height: 80%;
+    border-radius: 0.2em;
+}
+
+
+
+
+
+.features ul {
+    list-style: none;
+    margin: 15px 0;
+}
+
+.features li {
+    margin-bottom: 12px;
+    padding-left: 22px;
+    position: relative;
+}
+
+.features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #5bc0eb;
+    font-weight: bold;
+}
+
+
+
+
+
+.footer {
+    background: #fff;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.logo_ {
+    font-size: 34px;
+    font-weight: 700;
+    color: #5bc0eb;
+    margin-bottom: 15px;
+}
+
+.logo_ span {
+    color: #f78fb3;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.footer-social .link {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 2px solid #5bc0eb;
+    color: #5bc0eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 6px;
+    font-size: 14px;
+}
+
+.footer-social .link:hover {
+    background: #5bc0eb;
+    color: #fff;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.footer-info::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ccc;
+}
+
+.footer-info h4 {
+    margin-bottom: 10px;
+}
+
+.info-left {
+    text-align: right;
+}
+
+.info-right {
+    text-align: left;
+}
+
+footer p {
+    font-size: 13px;
+    color: #777;
+}
+
+.domain {
+    color: #f78fb3;
+}

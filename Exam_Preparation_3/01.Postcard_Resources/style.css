@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 12px/1.5 'Source Sans 3', sans-serif;
+}
+
+body,
+input,
+textarea,
+button {
+    font: inherit;
+}
+
+body {
+    background: #e6e6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 24px;
+}
+
+/* контейнерът на цялата картичка */
+.postcard-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+/* самата картичка */
+.postcard {
+    width: 900px;
+    background: #fff;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+    border-radius: 1.5em;
+    overflow: hidden;
+}
+
+.border {
+    /* бял контур около снимката */
+    border: 25px solid #fff;
+    box-sizing: border-box;
+}
+
+/* горната част със снимката */
+.postcard-image {
+    margin: auto;
+    position: relative;
+    height: 460px;
+    background: url("./images/nature.jpg") center / cover no-repeat;
+    border-top-left-radius: 1.5em;
+    border-top-right-radius: 1.5em;
+    overflow: hidden;
+}
+
+/* бялото поле върху снимката */
+.postcard-message {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 12px 24px;
+    text-align: center;
+    font-family: 'Gochi Hand', cursive;
+}
+
+.postcard-message h2 {
+    font-size: 2.3rem;
+    margin-bottom: 0.1em;
+    opacity: 0.7;
+}
+
+.postcard-message p {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    opacity: 0.5;
+}
+
+/* тънка хоризонтална линия под снимката */
+.line {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #e6e6e6;
+    margin-bottom: 1.5em;
+}
+
+
+/* долната част с адреса */
+.postcard-address {
+    padding-left: 3em;
+    font-family: 'Gochi Hand', cursive;
+    
+    /* бял контур около снимката */
+    background: rgb(245, 245, 245);
+    border-radius: 0 0 1.5em 1.5em;
+    box-sizing: border-box;
+}
+
+.postcard-address p {
+    padding: 0 26px;
+    font-size: 1.6rem;
+    margin-bottom: 0.4em;
+}
+
+.postcard-address .address:last-child {
+    margin-bottom: 0;
+    padding-bottom: 2em;
+}
+
+
+.postcard-address .pos {
+    padding: 14px 26px;
+    margin-bottom: 0.3em;
+}
+
+.postcard-address .address {
+     /* по светъл фон на текста */
+    opacity: 0.5;
+}

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 12px/1.5 'Kode Mono', sans-serif;
+}
+
+body,
+input,
+button {
+    font: inherit;
+}
+
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: #cfcac6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 420px;
+  background: #24333c;
+  border-radius: 0.5em;
+  padding: 28px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+}
+
+
+.tabs {
+  display: flex;
+  background: #3e4d54;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 12px 0;
+  color: #b7c2c8;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #1fb58a;
+  color: #ffffff;
+}
+
+/* Hover effect for Log In */
+.tab.login:hover {
+  background: #179a77;
+  color: #ffffff;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.row {
+  display: flex;
+  gap: 14px;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 1em;
+  background: transparent;
+  border: 1px solid #6f7f87;
+  color: #ffffff;
+  font-size: 15px;
+  outline: none;
+}
+
+input::placeholder {
+  color: #a9b3b8;
+}
+
+input:focus {
+  border-color: #1ab188;
+}
+
+.field {
+  position: relative;
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.fake-placeholder {
+  position: absolute;
+  top: 36%;
+  left: 14px;
+  transform: translateY(-50%);
+  font-size: 15px;
+  color: #a9b3b8;
+  pointer-events: none;
+}
+
+.fake-placeholder .star {
+  color: #1ab188;
+}
+
+
+button {
+  width: 100%;
+  padding: 0.3em;
+  background: #1ab188;
+  border: none;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  /* разстояние между буквите */
+  /* letter-spacing: 2px; */
+}
+
+button:hover {
+  background: #1ab188;
+}

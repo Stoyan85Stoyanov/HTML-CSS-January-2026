@@ -1,0 +1,57 @@
+@media (width <=600px) {
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.4rem;
+    }
+
+    .header-title {
+        padding: 1em 1em 0;
+    }
+
+    .header-title h1 {
+        width: 95%;
+        margin: auto;
+        font-size: 35px;
+        padding-bottom: 0.5em;
+    }
+
+    .header-title p {
+        width: 90%;
+        margin: auto;
+        font-size: 18px;
+    }
+
+    .header-title button {
+        margin-bottom: 1.5em;
+    }
+
+    .choose-us ul {
+        flex-direction: column;
+        gap: 16px;
+        width: 64%;
+        /* центрира */
+        margin: auto;
+    }
+
+    .about-us {
+        width: 75%;
+    }
+
+    .team-description ul li img {
+        width: 120px;
+        height: 150px;
+
+    }
+
+    .team-description ul {
+        gap: 3.5em;
+    }
+
+    .team-description ul li p {
+        font-size: 0.8em;
+        width: 125px;
+    }
+}

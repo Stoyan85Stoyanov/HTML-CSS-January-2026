@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 0; */
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Karla", sans-serif;
+}
+
+.img {
+    display: block;
+    width: 100%;
+}
+
+.generalSection {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sectionSizeLg {
+    max-width: 1350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sectionSizeMd {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sectionSizeSm {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bgBeige {
+    background-color: #f8f0e9;
+    color: #000;
+}
+
+.bgRed {
+    background-color: #e14747;
+    color: #fff;
+}
+
+.section {
+    padding: 3rem 2rem;
+}
+
+.sectionTitle {
+    font-size: 90px;
+    font-family: "Cormorant Infant", serif;
+    font-weight: 300;
+}
+
+.btn {
+    font-size: 0.75rem;
+    background-color: #fff;
+    padding: 0.5rem 1.3rem;
+    border: 1px solid #000;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+
+
+/* HEADER - NAVIGATION */
+
+.upHeader {
+    /* измества в горният край на страницата */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.upHeader.scrolled {
+    background-color: #000;
+}
+
+.upHeader .logo {
+    height: 3rem;
+    /* за да се контролира ръчно и да не се 
+    "омазва - разпъва или разтяга" */
+    width: auto;
+}
+
+.upHeader .list {
+    /* маха точката */
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.upHeader a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+/* HERO */
+
+.hero {
+    height: 100vh;
+    /* тъй като ще се наместват доста неща */
+    position: relative;
+}
+
+.hero .backgroundImg {
+    /* position */
+    width: 100%;
+    height: 100%;
+    /* запълва целият контейнер без да се разтяга 
+    прилага се при img*/
+    object-fit: cover;
+}
+
+.hero .filter {
+    /* за да бъде върху снимката */
+    position: absolute;
+    inset: 0px;
+    background-color: #000;
+    opacity: 0.3;
+}
+
+.hero .title {
+    position: absolute;
+    font-size: 115px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: "Cormorant Infant", serif;
+    width: max-content;
+}
+
+.hero .text {
+    position: absolute;
+    font-size: 20px;
+    bottom: 20%;
+    width: 34%;
+    left: 50%;
+    color: #fff;
+    text-align: center;
+    transform: translate(-50%);
+}
+
+
+/* TESTIMONIALS */
+
+.testimonials {
+    padding-bottom: 6rem;
+}
+
+.testimonials .note {
+    font-size: 1rem;
+    margin-bottom: 4rem;
+    /* за да не е болднат текста */
+    font-weight: normal;
+}
+
+.testimonials .title {
+    font-style: italic;
+}
+
+
+
+/* SUPPORT */
+
+.support {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.support .title {
+    font-size: 18px;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+
+
+/* MIND */
+
+.mind .content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: start;
+}
+
+.mind .title {
+    text-align: center;
+    margin: auto;
+    font-size: 50px;
+    font-family: "Cormorant Infant", serif;
+    font-weight: 600;
+}
+
+.mind .text {
+    font-size: 16px;
+}
+
+.mind .allArticles {
+    margin: auto;
+}
+
+
+
+/* GUIDE */
+
+.guide {
+    padding-top: 4rem;
+}
+
+.guide .title {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 50px;
+    font-family: "Cormorant Infant", serif;
+    font-weight: 500;
+}
+
+.guide .text {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    font-size: 16px;
+    width: 50rem;
+}
+
+.guide .btnFind {
+    display: block;
+    margin: auto;
+    border: none;
+    font-size: 0.75rem;
+    padding: 0.85rem 1.25rem;
+    border-radius: 1.75rem;
+    background-color: #fad87a;
+    cursor: pointer;
+}
+
+
+
+/* FOOTER */
+
+.footer {
+    padding: 2rem 2rem;
+    background-color: #352b2a;
+}
+
+.footer .content {
+    width: 22.5rem;
+}
+
+.footer .logo {
+    height: 2rem;
+    width: auto;
+    margin-bottom: 2rem;
+}
+
+.footer .text {
+    color: #fff;
+    margin-bottom: 1rem;
+    width: 28.75rem;
+}
+
+.footer .rights {
+    color: #5f5252;
+    font-size: 0.75rem;
+}

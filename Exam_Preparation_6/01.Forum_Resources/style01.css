@@ -1,0 +1,175 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap');
+
+
+  .home-testimonial {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: stretch;
+      background-size: cover;
+      justify-content: center;
+      background-image: url('./images/background.jpg');
+      background-position: center;
+  }
+
+
+  img {
+      display: block;
+      width: 100%;
+      height: auto;
+  }
+
+  .container {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+      width: 100%;
+      max-width: 1400px;
+      margin: 4em auto;
+  }
+
+  @media (min-width: 800px) {
+      .container {
+          flex-direction: row;
+      }
+  }
+
+  main {
+      flex: 0 0 65%;
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+      justify-content: space-between;
+  }
+
+  main article,
+  aside article {
+      flex-grow: 1;
+  }
+
+  aside {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+  }
+
+  /* Article */
+
+  article {
+      display: flex;
+      flex-direction: column;
+      height: 23em;
+  }
+
+  article .inner {
+      flex-grow: 1;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 2em;
+      gap: 2em;
+      /* border-radius: 0.3em; */
+      box-shadow: -0.2em 0.2em 0.5em 0 rgba(0, 0, 0, 0.05);
+  }
+
+  @container quote (max-width: 400px) {
+      article .inner {
+          flex-direction: column;
+          align-items: flex-start;
+      }
+  }
+
+  /* обърнати двойни кавички */
+  article i[class*="fa-"] {
+      font-size: 4em;
+      padding-bottom: 0.2em;
+  }
+
+  /* обърнати двойни кавички по-голям размер*/
+  .featured i[class*="fa-"] {
+      font-size: 6em;
+      margin-bottom: 0.6em;
+  }
+
+  article .media {
+      overflow: hidden;
+      flex: 0 0 25%;
+      aspect-ratio: 1/1;
+      position: relative;
+      border-radius: 50%;
+      box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+  }
+
+  article .media img {
+      /* за да се измести нагоре */
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+  article .desc {
+      color: #595959;
+      font-size: 1.30rem;
+      padding-bottom: 1em;
+  }
+
+  article h2 .author {
+      font-weight: bold;
+      font-size: 1.2em;
+  }
+
+  article .details {
+      width: 100%;
+      display: flex;
+      gap: 1em;
+      align-items: center;
+      border-top: 2px solid #fff;
+      padding-top: 2em;
+  }
+
+  section.content {
+      padding-top: 1em;
+  }
+
+
+  .content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .author-section {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      /* тънка хоризонтална  линия (отгоре!!) */
+      border: 1px solid #d9d9d9;
+      border-left: 0;
+      border-right: 0;
+      border-bottom: 0;
+      padding-top: 1em;
+
+  }
+
+  .mediaSpecial img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+  }
+
+  .author-info {
+      display: flex;
+      flex-direction: column;
+
+  }
+
+  .author-info .profession {
+      color: #595959;
+      font-size: 0.90rem;
+      font-weight: 500;
+  }
+
+  .featured_ {
+      margin-bottom: 5.5em;
+  }

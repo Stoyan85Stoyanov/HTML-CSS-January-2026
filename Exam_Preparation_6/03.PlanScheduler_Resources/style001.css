@@ -1,0 +1,279 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    color: #000;
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.header {
+    background: #d9d9d9;
+    padding: 20px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .navbar {
+    transform: translateX(-265px);
+}
+
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+}
+
+.btn-outline {
+    border: 1px solid #000;
+    border-radius: 0.3em;
+    padding: 8px 16px;
+    background: #fff;
+    cursor: pointer;
+    transform: translateX(270px);
+    font-size: 14px;
+}
+
+.hero {
+    /* СНИМКА */
+    background: url('./images/background.jpg') center / cover no-repeat;
+    /* padding: 120px 0; */
+    min-height: 80vh;
+    padding: 30px 60px;
+    position: relative;
+    /* измества самата СНИМКА  */
+    background-position: center -315px;
+}
+
+.hero-left {
+    margin-top: 9em;
+    width: 500px;
+    /* измества текста на ляво */
+    margin-left: -40px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: #fff;
+    margin-top: 5em;
+    margin-bottom: 60px;
+    line-height: 1.2;
+    flex-wrap: wrap;
+    font-size: 24px;
+    width: 30.6em;
+    font-weight: 500;
+}
+
+.stats {
+    background: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+
+.stats .container.stats-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.stats h2 {
+    color: #ff7c4c;
+    font-size: 60px;
+    margin-bottom: 1em;
+}
+
+.stats .top {
+    font-weight: 350px;
+    font-size: 25px;
+    margin-bottom: 0.6em;
+}
+
+.stats .down {
+    opacity: 0.6;
+}
+
+.blog {
+    background: #d9d9d9;
+    padding: 80px 0;
+}
+
+.blog .blog-item {
+    margin-left: 4em;
+    display: flex;
+    gap: 50px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+
+.blog .blog-item img {
+    width: 500px;
+    height: 350px;
+    object-fit: cover;
+
+}
+
+.blog-text span {
+    font-size: 14px;
+    color: #666;
+}
+
+.blog-text h3 {
+    margin: 40px 0;
+    font-size: 34px;
+}
+
+.blog-text p {
+    font-size: 16px;
+    color: #555;
+    width: 820px;
+    margin-bottom: 10px;
+}
+
+.blog-text a {
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.blog-text small {
+    display: block;
+    opacity: 0.6;
+    margin-top: 5em;
+}
+
+.pricing {
+    padding: 40px 0;
+    /* margin: 0 auto; */
+    margin-left: 4em;
+    margin-right: 4em;
+    background-color: #fff;
+}
+
+.pricing .pricing-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.pricing .pricing-text {
+    width: 40%;
+    margin-left: 4em;
+}
+
+.pricing .pricing-text h2 {
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+    font-size: 2.5em;
+}
+
+
+.pricing .pricing-text p {
+    width: 27em;
+    font-size: 1.6em;
+    opacity: 0.5;
+}
+
+.pricing .pricing-cards {
+    display: flex;
+    gap: 40px;
+    margin-right: 4em;
+}
+
+.card {
+    width: 400px;
+    height: 430px;
+    padding: 55px 45px;
+    padding: 40px;
+    text-align: center;
+}
+
+.orange {
+    background: #f26c3b;
+    color: #000;
+}
+
+.black {
+    background: #000;
+    color: #fff;
+}
+
+.price {
+    /* font-size: 40px;
+    margin: 20px 0; */
+    font-size: 54px;
+    font-weight: 300;
+    margin: 25px 0 35px;
+}
+
+.card ul {
+    list-style: none;
+    margin-bottom: 28px;
+}
+
+.card li {
+    /* margin: 8px 0; */
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.btn-dark {
+    background: #000;
+    color: #fff;
+    padding: 18px 36px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.3em;
+    font-size: 16px;
+}
+
+.btn-light {
+    background: #fff;
+    color: #000;
+    /* padding: 10px 20px;
+    border: none;
+    cursor: pointer; */
+    padding: 18px 36px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.3em;
+    font-size: 16px;
+}
+
+
+.footer {
+    width: 100%;
+    padding: 48px;
+    background-color: #d9d9d9;
+}
+
+.social {
+    width: 100%;
+    display: flex;
+    /* равни разстояния */
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 20px;
+}

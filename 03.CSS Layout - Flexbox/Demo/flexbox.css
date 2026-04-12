@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 4em;
+}
+
+/* Properties for the Parent */
+.flex-container {
+    border: 2px solid #666;
+    padding: 2em;
+    /* height: 600px; */
+    height: 600px;
+
+    /* стават под формата на кутийки (в дясно разположени хоризонтално една до друга)*/
+    display: flex;
+
+    /* прехвърля (пренася го) на следващият ред */
+    /* flex-wrap: wrap; */
+
+    /* прехвърля (пренася го) на следващият ред но в обратен ред*/
+    /* flex-wrap: wrap-reverse; */
+
+    /* слага от всички страни и между елементите по заложената стойност */
+    gap: 1em;
+
+    /* разширяват се надолу */
+    /* height: 400px; */
+
+    /* разширява се на страни */
+    /* width: 300px; */
+
+    /* скрива това което излиза от flex-container */
+    /* overflow: hidden; */
+
+    /* нищо не се променя в този случай */
+    /* flex-direction: row; */
+
+    /* подреждат хоризонтално едно под друго */
+    /* flex-direction: column; */
+
+    /* default state - (в дясно !)*/
+    /* justify-content: flex-start; */
+
+    /* в ляво! */
+    /* justify-content: end; */
+
+    /* в центъра */
+    /* justify-content: center; */
+
+    /* с разстояния по-между им */
+    /* justify-content: space-between; */
+
+    /* има разстояние между тях */
+    /* justify-content: space-evenly; */
+
+
+
+    /* default (разпъват се вертикално) */
+    /* align-items: stretch; */
+
+    /* свиват се и се позиционират горе */
+    align-items: flex-start;
+
+    /* свиват се и се позиционират в средата */
+    /* align-items: center; */
+
+    /* свиват се и се позиционират в долу */
+    /* align-items: flex-end; */
+
+
+
+    /* работи само когато има повече от един ред 
+       и когато има приложено height: 600px;- долу* /
+    /* align-content: end; */
+
+    /* работи само когато има повече от един ред 
+       и когато има приложено height: 600px;- горе*/
+    /* align-content: flex-start; */
+
+
+}
+
+.item {
+    border: 2px solid #000;
+    padding: 0.5em;
+    background: #eee;
+    /* работи с flex-grow и flex-shrink*/
+    flex-basis: 4em;
+    flex-grow: 1;
+
+    /* ако е 0 не се свива, но ако е над 0 се свива*/
+    flex-shrink: 1;
+
+    /* basis + shrink = max-width (задава максимален размер)*/
+    /* basis + grow = min-width (задава минимален размер) */
+    /* basis + grow + shrink = new case (не може да се постигне) */
+}
+
+
+.item.fi-2 {
+    /* оразмерява самите елементи 
+    ако е повече от 1 ще заема повече място
+    от останалите елементи*/
+    flex-grow: 2;
+}
+
+.item.fi-3 {
+    /* оразмерява самите елементи */
+    flex-grow: 1;
+}
+
+
+/* номер 5 да заеме цялото празно пространство div class="flex-container" */
+.item.fi-5 {
+    /* flex-grow: 1; */
+    background: lightblue;
+
+    /* работи при изключен (align-content: flex-start;) 
+     избраният елемент е долу останалите са горе */
+    /* align-self: flex-end; */
+}

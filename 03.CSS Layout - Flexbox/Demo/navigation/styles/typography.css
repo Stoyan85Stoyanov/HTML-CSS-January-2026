@@ -1,0 +1,11 @@
+html {
+    font: 14px/1.5 Lusida Grande, sans-serif;
+}
+
+body, input, button, textarea {
+    font: inherit;
+}
+
+p, ol, ul {
+    padding-bottom: 1.5em;
+}

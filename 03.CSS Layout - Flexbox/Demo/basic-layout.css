@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 16px/1.5 Verdana, sans-serif;
+}
+
+body, form, input, button {
+    font: inherit;
+}
+
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Задаване на всички елементи (деца) вътре 
+- за визуализация и помощ*/
+body > * {
+    padding: 2em;
+    border: 2px solid black;
+    
+}
+
+header {
+    /* позволява му да разсте да се shrink и да е на 100%*/
+    flex: 1 1 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* flex-grow - 1, flex-shrink - 1 flex-basis - 20ch */
+main {
+    flex: 1 1 20ch;
+}
+
+footer {
+    flex: 1 1 100%;
+}
+
+nav ul {
+    display: flex;
+    gap: 2em;
+}
+
+nav ul li,
+nav ul li a{
+    display: block;
+}
+
+nav ul li a{
+    text-decoration: none;
+}

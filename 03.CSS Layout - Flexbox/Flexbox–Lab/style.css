@@ -1,0 +1,120 @@
+/* RESET */
+
+*{
+  box-sizing: border-box;  
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+   list-style: none; 
+}
+
+.img{
+    width: 100%;
+}
+
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Task 3 */
+
+.calendar{
+    border: 2px solid blue;
+    display: flex;
+}
+
+.calendar .mainContainer,
+.calendar .sideContainer{
+    flex-grow: 1;
+}
+
+.calendar .item{
+     border: 1px solid gray;
+     /* padding: 1rem; */
+     text-align: center;
+     height: 70px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+
+.calendar .sideContainer{
+    /* background-color: lightgreen; */
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar .sideContainer .item{
+   flex-basis: 100px;
+   flex-grow: 1;
+}
+
+
+.calendar .mainContainer{
+    /* background-color: burlywood; */
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 1rem; */
+}
+
+
+.calendar .full{
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+.calendar .fifth{
+    width: 15%;
+    flex-grow: 1;
+    /* background-color: aqua; */
+}
+
+.calendar .half{
+    width: 40%;
+    flex-grow: 1;
+    /* background-color: aqua; */
+}
+
+/* ----------------------------------------- */
+/* Task 5 */
+
+.gallery{
+    display: flex;
+    gap: 2rem;
+}
+
+
+.gallery .frame{
+    max-width: 300px;
+    aspect-ratio: 3 / 2;
+    border: 5px solid black;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* .img{
+    width: 100%;
+} */
+
+.gallery .frame .imgContainer{
+    /* background-color: lightcoral; */
+    flex-grow: 1;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery .frame .footer{
+    padding: 0.5rem;
+    color: grey;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 0.75;
+}
+
+

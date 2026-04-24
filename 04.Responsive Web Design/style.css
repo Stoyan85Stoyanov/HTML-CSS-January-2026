@@ -1,0 +1,80 @@
+.banner {
+    background-color: rgba(0, 0, 255, 0.750);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.main-nav ul {
+    /* подреждат се едно до друго */
+    display: flex;
+    padding-left: 0;
+    justify-content: space-around;
+}
+
+li {
+    /* премахва точките отпред */
+    list-style-type: none;
+    border: 1px solid green;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+a {
+    /* да не са подчертани */
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+.items-ctr {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.item {
+    border: 2px solid red;
+    padding: 2em 2.5em;
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+}
+
+img {
+    width: 100%;
+    border: 1px solid blue;
+}
+
+.img-ctr {
+    width: 50%;
+    display: flex;
+    margin-right: 2em;
+}
+
+@media screen and (max-width <= 767px) {
+
+    .main-nav ul {
+        flex-direction: column;
+    }
+
+    .main-nav ul li {
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .items-ctr, .item {
+       flex-direction: column;
+    }
+
+    .item, .img-ctr, .text-ctr {
+        width: 80%;
+        margin: auto;
+    }
+}

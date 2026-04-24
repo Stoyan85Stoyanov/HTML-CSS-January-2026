@@ -1,0 +1,42 @@
+  body {
+      background: lightcoral;
+  }
+
+  /* старо изписване на media queries
+  @media screen and (max-width: 700px)  */
+
+
+  /* таблети
+    @media (max-width: 1100px) {
+
+      body {
+          background: lightblue;
+      }
+  } */
+
+
+  /* всички останали случай
+  @media (min-width: 1101px) {
+
+      body {
+          background: lightblue;
+      }
+  } */
+
+
+  /* големи телефони
+  @media (max-width: 800px) {
+
+      body {
+          background: lightblue;
+      }
+  } */
+
+
+  /* трябва и двете да са верни за да се изпълни условието*/
+  @media (min-width: 400px) and (max-width: 900px) {
+
+      body {
+          background: lightblue;
+      }
+  }

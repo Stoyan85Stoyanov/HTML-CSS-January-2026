@@ -1,0 +1,76 @@
+h1, p {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+
+/* основна страница */
+body {
+  background: #ffffff;
+  color: #000;
+  transition:  0.3s;
+  background-color: 0.3s;
+  font-family: Arial, sans-serif;
+}
+
+/* тъмна тема */
+body.dark {
+  background: #121212;
+  color: #ffffff;
+}
+
+/* SWITCH */
+.switch {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: inline-block;
+  width: 54px;
+  height: 28px;
+  z-index: 1000;
+}
+
+/* скриваме checkbox-а */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* плъзгач */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+/* кръгчето */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* когато е включен */
+input:checked + .slider {
+  /* background-color: #2196f3; */
+  background-color: rgb(0, 204, 255);
+}
+
+/* местене надясно */
+input:checked + .slider:before {
+  transform: translateX(26px);
+}

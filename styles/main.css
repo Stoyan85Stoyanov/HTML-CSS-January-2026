@@ -1,0 +1,39 @@
+h1 {
+    color: red;
+}
+
+.specialText{
+    color: rebeccapurple;
+    font-size: 20px;
+}
+
+.specialBackground{
+    background-color: greenyellow;
+}
+
+
+#contactsLink{
+    color: blue;
+}
+
+
+[href="https://softuni.bg/"]{
+    color: green;
+}
+
+
+.longText{
+    font-size: 3rem;
+    background-color: greenyellow;
+    width: 250px;
+
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.description{
+    font-size: 1.2rem;
+    color: red;
+}

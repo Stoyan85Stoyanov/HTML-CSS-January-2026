@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: url('./Exam_Preparation_6/01.Forum_Resources/images/background.jpg') center center / cover no-repeat fixed;
+    min-height: 100vh;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.page {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.column-left {
+    flex: 2;
+}
+
+.column-right {
+    flex: 1;
+}
+
+
+.card {
+    background: #f4f4f4;
+    padding: 50px;
+    border-radius: 2px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+.card-horizontal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-content {
+    max-width: 100%;
+}
+
+.quote-mark {
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+
+/* обърнати двойни кавички */
+article i[class*="fa-"] {
+    font-size: 4em;
+    padding-bottom: 0.2em;
+}
+
+/* обърнати двойни кавички по-голям размер*/
+.column-right article i[class*="fa-"] {
+    font-size: 6em;
+    margin-bottom: 0.6em;
+}
+
+.quote-text {
+    font-size: 18px;
+    font-weight: 300;
+    color: #555;
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
+
+.quote-text.large {
+    font-size: 17px;
+}
+
+.author {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.card-image img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.card-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 29.6em;
+}
+
+.divider {
+    height: 1px;
+    background: #ddd;
+    margin: 40px 0;
+}
+
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-image img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.profile-info span {
+    font-size: 14px;
+    color: #666;
+}
